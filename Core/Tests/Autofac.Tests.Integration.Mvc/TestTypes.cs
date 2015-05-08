@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Reflection;
 using System.Web.Mvc;
-using System.Web.Mvc.Filters;
 
 namespace Autofac.Tests.Integration.Mvc
 {
@@ -147,63 +146,6 @@ namespace Autofac.Tests.Integration.Mvc
         }
 
         public void OnResultExecuted(ResultExecutedContext filterContext)
-        {
-        }
-    }
-
-    public class TestAuthenticationFilter : IAuthenticationFilter
-    {
-        public void OnAuthentication(AuthenticationContext filterContext)
-        {
-        }
-
-        public void OnAuthenticationChallenge(AuthenticationChallengeContext filterContext)
-        {
-        }
-    }
-
-    public class TestAuthenticationFilter2 : IAuthenticationFilter
-    {
-        public void OnAuthentication(AuthenticationContext filterContext)
-        {
-        }
-
-        public void OnAuthenticationChallenge(AuthenticationChallengeContext filterContext)
-        {
-        }
-    }
-
-    public class TestCombinationFilter : IActionFilter, IAuthenticationFilter, IAuthorizationFilter, IExceptionFilter, IResultFilter
-    {
-        public void OnActionExecuting(ActionExecutingContext filterContext)
-        {
-        }
-
-        public void OnActionExecuted(ActionExecutedContext filterContext)
-        {
-        }
-
-        public void OnAuthorization(AuthorizationContext filterContext)
-        {
-        }
-
-        public void OnException(ExceptionContext filterContext)
-        {
-        }
-
-        public void OnResultExecuting(ResultExecutingContext filterContext)
-        {
-        }
-
-        public void OnResultExecuted(ResultExecutedContext filterContext)
-        {
-        }
-
-        public void OnAuthentication(AuthenticationContext filterContext)
-        {
-        }
-
-        public void OnAuthenticationChallenge(AuthenticationChallengeContext filterContext)
         {
         }
     }

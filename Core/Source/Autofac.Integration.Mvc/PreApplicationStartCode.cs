@@ -24,7 +24,7 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 
 using System.ComponentModel;
-using Microsoft.Web.Infrastructure.DynamicModuleHelper;
+//using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 
 namespace Autofac.Integration.Mvc
 {
@@ -45,7 +45,7 @@ namespace Autofac.Integration.Mvc
             if (_startWasCalled) return;
 
             _startWasCalled = true;
-            DynamicModuleUtility.RegisterModule(typeof(RequestLifetimeHttpModule));
+            //DynamicModuleUtility.RegisterModule(typeof(RequestLifetimeHttpModule));
         }
     }
 }
